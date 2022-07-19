@@ -16,16 +16,15 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'dmg-angular-test'`, () => {
+  it(`should have as pageTitle 'by Sony Pictures Entertainment'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('dmg-angular-test');
+    expect(app.pageTitle).toEqual('by Sony Pictures Entertainment');
   });
 
-  it('should render title', () => {
+  it(`should have as title 'the at-home Runner typeahead exercise'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('dmg-angular-test app is running!');
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('the at-home Runner typeahead exercise');
   });
 });
