@@ -291,3 +291,8 @@ svg#clouds {
     visibility: hidden;
   }
 }
+
+.home {
+  display: flex;
+  justify-content: center;
+}

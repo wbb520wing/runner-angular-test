@@ -1,0 +1,16 @@
+<div class="container">
+  <form class="form">
+    <mat-form-field class="form-field" appearance="fill">
+      <input placeholder='Search titles here...'type="text" matInput [matAutocomplete]="auto" [formControl]="myControl">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option (onSelectionChange)="onChange(list)" *ngFor="let list of filteredOptions | async" [value]="list">
+          {{list.name}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+  <div class="titles">
+    <h1>Full Name:</h1>
+    <h2>{{fullname}}</h2>
+  </div>
+</div>

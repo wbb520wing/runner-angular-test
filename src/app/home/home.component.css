@@ -1,0 +1,26 @@
+.container {
+  width: 100vh;
+  text-align: center;
+}
+
+.form-field {
+  width: 60%;
+};
+
+
+input {
+  width: 100%;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.titles{
+  width: 60%;
+  margin: auto;
+}
+
+.titles h1 {
+  color: rgb(20, 32, 66);
+  font-size: 2rem;
+  font-weight: bold;
+}
